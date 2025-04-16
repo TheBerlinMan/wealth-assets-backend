@@ -1,10 +1,10 @@
 {
   "name": "wealth-assets-backend",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "start": "node server.js"
   },
+  "type": "module",
   "keywords": [],
   "author": "Tommy Onik",
   "license": "ISC",

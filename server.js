@@ -4,6 +4,9 @@ import logger from 'morgan';
 import 'dotenv/config.js';
 import './config/database.js'
 
+import {router as assetRoutes} from './routes/assets.js';
+
+
 const app = express();
 
 const port = process.env.port || 3001;
@@ -14,6 +17,9 @@ app.listen(port, () => {
 //middleware
 app.use(cors());
 app.use(logger('dev'));
+
+//routes
+app.use('/api/assets', assetRoutes);
 
 app.get('/', (req, res) => {
     res.send('Welcome to the wealth.com Assets API');

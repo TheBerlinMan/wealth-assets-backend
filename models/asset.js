@@ -71,4 +71,4 @@ const AssetSchema = new Schema({
 
 const Asset = mongoose.model('Asset', AssetSchema);
 
-export default { Asset };
+export { Asset };
